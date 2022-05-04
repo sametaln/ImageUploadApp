@@ -10,6 +10,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AmazonConfig {
+
     @Bean
     public AmazonS3 S3() {
         AWSCredentials awsCredentials = new BasicAWSCredentials(
