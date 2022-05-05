@@ -16,7 +16,7 @@ public class AmazonConfig {
         AWSCredentials awsCredentials = new BasicAWSCredentials(
                 "AKIAVJVJREX4H3PHXYWE","X7VhYIsvMR2vX2iRod6Y6oHyAho/0DyXdP9g2jJ1"
         );
-
+        System.out.println("connected to amazon");
         return AmazonS3ClientBuilder.standard().withRegion("eu-central-1").withCredentials(new AWSStaticCredentialsProvider(awsCredentials)).build();
     }
 }
